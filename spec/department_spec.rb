@@ -14,8 +14,8 @@ RSpec.describe Department do
             expect(customer_service.name). to eq("Customer Service")
         end
 
-        it "has starts with no employees" do 
-            expect(customer_service.employees).to ([])
+        it " starts with no employees" do 
+            expect(customer_service.employees).to eq([])
         end
     end
 
