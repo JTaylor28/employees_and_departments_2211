@@ -9,6 +9,10 @@ RSpec.describe Department do
         it "exists" do 
             expect(customer_service).to be_an_instance_of(Department)
         end
+
+        it "has attribues" do
+            expect(customer_service.name). to eq("Customer Service")
+        end
     end 
 
 end
