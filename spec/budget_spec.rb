@@ -12,5 +12,10 @@ RSpec.describe Budget do
         it "exists" do 
             expect(co_budget).to be_an_instance_of(Budget)
         end
+
+        it "has attributes" do
+            expect(co_budget.name).to eq("CO Budget")
+            expect(co_budget.year).to eq("2023")
+        end
     end 
 end
