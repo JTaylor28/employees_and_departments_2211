@@ -55,4 +55,13 @@ RSpec.describe Budget do
             expect(co_budget.department_expenses_under(500)).to eq([human_resources])
         end
     end
+
+    describe "#employees_salary" do 
+        it "list all employees' salaries" do
+            co_budget.add_employee(bobbi)
+            co_budget.add_employee(aaron)
+            expect(co_budget.employees_salary(bobbi, aaron)).to eq([100000, 90000])
+
+        end
+    end
 end

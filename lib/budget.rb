@@ -24,4 +24,8 @@ class Budget
         department
     end
 
+
+    # def employee_salary(employees)
+
+
 end
