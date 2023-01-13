@@ -29,6 +29,11 @@ RSpec.describe Department do
         end
     end
 
+    describe "#expense" do 
+        it "can track expenses and starts with none" do
+            expect(customer_service.expenses).to eq(0)
+        end
+    end
 end
 
 
