@@ -21,8 +21,12 @@ RSpec.describe Budget do
     end 
         
     describe "#departments & #add_department(department)" do
+        
         it "returns a list of departments and starts with none" do
             expect(co_budget.departments).to eq([])
+            co_budget.add_department(customer_service)
+            co_budget.add_department(human_resources)
+            expect(co_budget.departments).to eq([customer_service, human_resources])
 
         end
     end
