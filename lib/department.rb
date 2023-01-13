@@ -1,7 +1,8 @@
 class Department 
 
     attr_reader :name,
-                :employees
+                :employees,
+                :expenses
 
     def initialize(name)
         @name = name
@@ -12,5 +13,10 @@ class Department
     def hire(employee)
         @employees << employee
     end
+
+    def expense(expense)
+        @expenses += expense
+    end 
+    
 
 end
