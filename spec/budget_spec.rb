@@ -56,11 +56,11 @@ RSpec.describe Budget do
         end
     end
 
-    describe "#employees_salary" do 
+    describe "#employees_salarys" do 
         it "list all employees' salaries" do
             co_budget.add_employee(bobbi)
             co_budget.add_employee(aaron)
-            expect(co_budget.employees_salary(bobbi, aaron)).to eq([100000, 90000])
+            expect(co_budget.employees_salarys).to eq([100000, 90000])
 
         end
     end

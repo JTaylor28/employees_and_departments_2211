@@ -25,7 +25,7 @@ class Budget
     end
 
 
-    # def employee_salary(employees)
-
-
+    def employees_salarys
+        employee_salaries = employees.map { |e| e.salary }
+    end
 end
