@@ -21,7 +21,7 @@ RSpec.describe Employee do
         it "increases salary by given amount" do
             expect(bobbi.salary).to eq(100000)
             bobbi.give_raise(5000)
-            expect(bobbi.salary).to eq(15000)
+            expect(bobbi.salary).to eq(105000)
 
         end
     end 
